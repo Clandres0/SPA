@@ -49,7 +49,7 @@ nav a {
   transition: opacity .25s ease;
 }
 
-.bottom {
+.boton {
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -57,7 +57,7 @@ nav a {
   position: relative;
 }
 
-.bottom:before {
+.boton:before {
   content:"";
   position: absolute;
   border: var(--secondary) solid 1px;
@@ -65,9 +65,9 @@ nav a {
   border-radius: 6px;
 }
 
-.bottom:hover:before,
-.bottom:focus:before,
-.bottom:active:before {
+.boton:hover:before,
+.boton:focus:before,
+.boton:active:before {
   top: -8px;
   right: -8px;
   bottom: -8px;
@@ -155,14 +155,12 @@ nav a {
 }
 
 .icon {
-  width:70px;
-  height:70px;
-
+  width:100px;
+  height:100px;
   display:flex;
   align-items:center;
-  justify-content:center;
-
-  margin-bottom:14px;
+  justify-content: center;
+  margin-bottom:10px;
 }
 
 .stats {
@@ -186,8 +184,8 @@ nav a {
 }
 
 .stat img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
@@ -237,10 +235,11 @@ nav a {
   box-shadow: 0 12px 40px rgba(0,0,0,.08);
   font-size: .85rem;
   z-index: 3;
+  opacity: 0.7;
 }
 
 .testimonial.top { top: 40px; right: -40px; }
-.testimonial.bottom { bottom: 40px; right: -20px; }
+.testimonial.bottom { bottom: 40px; right: 200px; }
 
 .testimonial strong {
   display: block;
